@@ -2,7 +2,7 @@ Repository of a project that aims to develop a graphical user interface (GUI) to
 
 This Repository contains source code of the GUI as well as the logic to control the motor.
 
-The GUI was implemented using the TouchGFX framework which includes TouchGFX Designer and TouchGFX engine. The GUI is displayed on a 2.4" QVGA TFT LCD.
+The GUI was implemented using the TouchGFX framework which includes TouchGFX Designer and TouchGFX engine. The GUI is displayed on a 2.4" QVGA TFT LCD touchscreen.
 
 The GUI is comprised of multiple screens, each of which serve a specific purpose. The following are examples of screens that have been implemented:
 
@@ -21,5 +21,11 @@ The GUI is comprised of multiple screens, each of which serve a specific purpose
 The logic is as follows:
 First, the user is asked to select the mode of operation (Static or Oscillation mode). Then, the user is asked to enter a specific angle.
 After the angle is selected, the user is asked to enter the speed. The final screen allows the user to stop or start the motor using the parameters specified.
+
+Demo video:
+
+https://github.com/OussamaElkihel/Project-StepperMotor/assets/129800481/dff3edfc-be58-44b8-801c-5cd1b8857aed
+
+
 
 
