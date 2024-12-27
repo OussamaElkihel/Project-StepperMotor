@@ -1,0 +1,2773 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "MainScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 59,
+            "Y": 20,
+            "Width": 121,
+            "Height": 24,
+            "TextId": "__SingleUse_T2BW",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonOscMode",
+            "X": 33,
+            "Y": 200,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_normal.png",
+            "TextId": "__SingleUse_755D",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\small_round_normal.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonStaMode",
+            "X": 33,
+            "Y": 88,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_normal.png",
+            "TextId": "__SingleUse_D5KN",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\small_round_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionStaMode",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStaMode"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenStaMode_Ang"
+            }
+          },
+          {
+            "InteractionName": "InteractionOscMode",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOscMode"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenOscMode_Ang"
+            }
+          },
+          {
+            "InteractionName": "InteractionSelectOsc",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonOscMode"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionSelectOsc"
+            }
+          },
+          {
+            "InteractionName": "InteractionSelectSta",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStaMode"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionSelectSta"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenStaMode_Ang",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonDelete",
+            "X": 170,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_CCQU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey3",
+            "X": 120,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_2BSJ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 61,
+            "Y": 8,
+            "Width": 117,
+            "Height": 24,
+            "TextId": "__SingleUse_AYVP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 44,
+            "Y": 33,
+            "Width": 152,
+            "Height": 24,
+            "TextId": "__SingleUse_94L5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Y": 58,
+            "Width": 240,
+            "Height": 50,
+            "Color": {
+              "Red": 43,
+              "Green": 41,
+              "Blue": 87
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey1",
+            "X": 15,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_TADQ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey0",
+            "X": 68,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_6N9M",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey2",
+            "X": 68,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_ESKK",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKeyComma",
+            "X": 15,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_GMXP",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey4",
+            "X": 15,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_BX7J",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey5",
+            "X": 68,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_GTDY",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey6",
+            "X": 120,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_HYAG",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey7",
+            "X": 15,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_9D2Y",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey8",
+            "X": 68,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_HC4O",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey9",
+            "X": 120,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_VJHD",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBackSta",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonValidate",
+            "X": 170,
+            "Y": 117,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 7,
+            "Y": 71,
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_RSVV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_NA43",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBackSta"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "MainScreen"
+            }
+          },
+          {
+            "InteractionName": "InteractionValidate",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonValidate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionValidate"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey1"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey2"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey3"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey4"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey5"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey6"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey7"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey8",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey8"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey9",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey9"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey0"
+            }
+          },
+          {
+            "InteractionName": "InteractionComma",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKeyComma"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionComma"
+            }
+          },
+          {
+            "InteractionName": "InteractionDelete",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDelete"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionDelete"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "InteractionValidate"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenStaMode_Spd"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenStaMode_Spd",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonDelete",
+            "X": 170,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_GTX4",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey3",
+            "X": 120,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_2T3Y",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 61,
+            "Y": 8,
+            "Width": 112,
+            "Height": 24,
+            "TextId": "__SingleUse_UTCX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_JGIA",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 44,
+            "Y": 33,
+            "Width": 158,
+            "Height": 24,
+            "TextId": "__SingleUse_MZ3Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Y": 58,
+            "Width": 240,
+            "Height": 50,
+            "Color": {
+              "Red": 43,
+              "Green": 41,
+              "Blue": 87
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey1",
+            "X": 15,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_JRJE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey0",
+            "X": 68,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_JF7K",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey2",
+            "X": 68,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_TKUV",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKeyComma",
+            "X": 15,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_ZVHX",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey4",
+            "X": 15,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_180D",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey5",
+            "X": 68,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_P9JE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey6",
+            "X": 120,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_UUB3",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey7",
+            "X": 15,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_JPL9",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey8",
+            "X": 68,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_RBBZ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey9",
+            "X": 120,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_9CM3",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBackSta",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonValidate",
+            "X": 170,
+            "Y": 117,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 7,
+            "Y": 71,
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_AWAD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_G659",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBackSta"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenStaMode_Ang"
+            }
+          },
+          {
+            "InteractionName": "InteractionValidate",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonValidate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionValidate"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey1"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey2"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey3"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey4"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey5"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey6"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey7"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey8",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey8"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey9",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey9"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey0"
+            }
+          },
+          {
+            "InteractionName": "InteractionComma",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKeyComma"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionComma"
+            }
+          },
+          {
+            "InteractionName": "InteractionDelete",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDelete"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionDelete"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "InteractionValidate"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenStaControl"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenStaControl",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 71,
+            "Y": 52,
+            "Width": 98,
+            "Height": 24,
+            "TextId": "__SingleUse_CJZQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_R2VS",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 61,
+            "Y": 18,
+            "Width": 117,
+            "Height": 24,
+            "TextId": "__SingleUse_SAYA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 77,
+            "Y": 88,
+            "Width": 92,
+            "Height": 24,
+            "TextId": "__SingleUse_LGWS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_EP5O",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonStartSta",
+            "X": 13,
+            "Y": 142,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_disabled.png",
+            "TextId": "__SingleUse_QTCT",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\small_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonStopSta",
+            "X": 127,
+            "Y": 142,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_action.png",
+            "TextId": "__SingleUse_KYXC",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\small_fill_action.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBack",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBack"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenStaMode_Spd"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStartSta"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionStaStart"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStopSta"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionStaStop"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenOscMode_Ang",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonDelete",
+            "X": 170,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_NGKL",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey3",
+            "X": 120,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_4SCM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 38,
+            "Y": 8,
+            "Width": 161,
+            "Height": 24,
+            "TextId": "__SingleUse_BMU3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 44,
+            "Y": 33,
+            "Width": 152,
+            "Height": 24,
+            "TextId": "__SingleUse_QK3C",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Y": 58,
+            "Width": 240,
+            "Height": 50,
+            "Color": {
+              "Red": 43,
+              "Green": 41,
+              "Blue": 87
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey1",
+            "X": 15,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_GJMZ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey0",
+            "X": 68,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_BL9X",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey2",
+            "X": 68,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_FZT0",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKeyComma",
+            "X": 15,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_UREF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey4",
+            "X": 15,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_PVKH",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey5",
+            "X": 68,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_LJFF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey6",
+            "X": 120,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_3TC3",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey7",
+            "X": 15,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_4LVE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey8",
+            "X": 68,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_IAJF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey9",
+            "X": 120,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_TU95",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBackOsc",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonValidate",
+            "X": 170,
+            "Y": 117,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 7,
+            "Y": 71,
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_1JXD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_G9ST",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBackOsc"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "MainScreen"
+            }
+          },
+          {
+            "InteractionName": "InteractionValidate",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonValidate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionValidate"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey1"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey2"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey3"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey4"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey5"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey6"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey7"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey8",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey8"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey9",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey9"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey0"
+            }
+          },
+          {
+            "InteractionName": "InteractionComma",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKeyComma"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionComma"
+            }
+          },
+          {
+            "InteractionName": "InteractionDelete",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDelete"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionDelete"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "InteractionValidate"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenOscMode_Spd"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenOscMode_Spd",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonDelete",
+            "X": 170,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_VMK6",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey3",
+            "X": 120,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_87LJ",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 61,
+            "Y": 8,
+            "Width": 112,
+            "Height": 24,
+            "TextId": "__SingleUse_8ZJO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_FQJ6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 44,
+            "Y": 33,
+            "Width": 158,
+            "Height": 24,
+            "TextId": "__SingleUse_66JY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "Y": 58,
+            "Width": 240,
+            "Height": 50,
+            "Color": {
+              "Red": 43,
+              "Green": 41,
+              "Blue": 87
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey1",
+            "X": 15,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_OXDP",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey0",
+            "X": 68,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_HJHR",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey2",
+            "X": 68,
+            "Y": 117,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_YUQD",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKeyComma",
+            "X": 15,
+            "Y": 252,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_TV72",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey4",
+            "X": 15,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_2ENR",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey5",
+            "X": 68,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_PJEX",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey6",
+            "X": 120,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_5MAF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey7",
+            "X": 15,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_W8SM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey8",
+            "X": 68,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_KNRS",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonKey9",
+            "X": 120,
+            "Y": 204,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "TextId": "__SingleUse_79K4",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBackOsc",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonValidate",
+            "X": 170,
+            "Y": 117,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_tiny_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\tiny_fill_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 7,
+            "Y": 71,
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_ETEV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_QKSX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBackOsc"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenOscMode_Ang"
+            }
+          },
+          {
+            "InteractionName": "InteractionValidate",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonValidate"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionValidate"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey1"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey2"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey3"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey4"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey5",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey5"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey6",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey6"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey7",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey7"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey8",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey8"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey9",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey9"
+            }
+          },
+          {
+            "InteractionName": "InteractionKey0",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKey0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionKey0"
+            }
+          },
+          {
+            "InteractionName": "InteractionComma",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonKeyComma"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionComma"
+            }
+          },
+          {
+            "InteractionName": "InteractionDelete",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonDelete"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionDelete"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "InteractionValidate"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenOscControl"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenOscControl",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_240x320_lines.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 71,
+            "Y": 52,
+            "Width": 98,
+            "Height": 24,
+            "TextId": "__SingleUse_EN6R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_UOP3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 40,
+            "Y": 18,
+            "Width": 161,
+            "Height": 24,
+            "TextId": "__SingleUse_WNVS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 77,
+            "Y": 88,
+            "Width": 92,
+            "Height": 24,
+            "TextId": "__SingleUse_5FPQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZXWR",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonStartSta",
+            "X": 13,
+            "Y": 142,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_disabled.png",
+            "TextId": "__SingleUse_HDRA",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\small_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonStopSta",
+            "X": 127,
+            "Y": 142,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_fill_action.png",
+            "TextId": "__SingleUse_LNJC",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\small_fill_action.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonBack",
+            "X": 130,
+            "Y": 270,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionBack",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBack"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ScreenOscMode_Spd"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStartSta"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionOscStart"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonStopSta"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functionOscStop"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "MainScreen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_D01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.24.1",
+  "CreatedBy": "4.24.1"
+}

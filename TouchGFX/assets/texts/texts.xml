@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.24.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_LNJC" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Stop</Translation>
+      </Text>
+      <Text Id="__SingleUse_HDRA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZXWR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_5FPQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Angle : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WNVS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Oscillation Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_UOP3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_EN6R" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Speed : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QKSX" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_ETEV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_79K4" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="__SingleUse_KNRS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_W8SM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="__SingleUse_5MAF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_PJEX" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_2ENR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_TV72" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="__SingleUse_YUQD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_HJHR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_OXDP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_66JY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Choose Speed :</Translation>
+      </Text>
+      <Text Id="__SingleUse_FQJ6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_8ZJO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Angle : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_87LJ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_VMK6" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">DE</Translation>
+      </Text>
+      <Text Id="__SingleUse_G9ST" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_1JXD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TU95" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="__SingleUse_IAJF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_4LVE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="__SingleUse_3TC3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_LJFF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_PVKH" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_UREF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="__SingleUse_FZT0" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_BL9X" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_GJMZ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_QK3C" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Choose Angle :</Translation>
+      </Text>
+      <Text Id="__SingleUse_BMU3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Oscillation Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_4SCM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_NGKL" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">DE</Translation>
+      </Text>
+      <Text Id="__SingleUse_R2VS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_EP5O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_LGWS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Angle : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_SAYA" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Static Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_CJZQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Speed : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KYXC" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Stop</Translation>
+      </Text>
+      <Text Id="__SingleUse_QTCT" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start</Translation>
+      </Text>
+      <Text Id="__SingleUse_JGIA" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_G659" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_AWAD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_9CM3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="__SingleUse_RBBZ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_JPL9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="__SingleUse_UUB3" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_P9JE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_180D" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZVHX" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="__SingleUse_TKUV" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_JF7K" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_JRJE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_MZ3Q" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Choose Speed :</Translation>
+      </Text>
+      <Text Id="__SingleUse_UTCX" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Angle : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_2T3Y" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTX4" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">DE</Translation>
+      </Text>
+      <Text Id="__SingleUse_NA43" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_2BSJ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="__SingleUse_CCQU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">DE</Translation>
+      </Text>
+      <Text Id="__SingleUse_94L5" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Choose Angle :</Translation>
+      </Text>
+      <Text Id="__SingleUse_AYVP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Static Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_D5KN" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Static Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_VJHD" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="__SingleUse_HC4O" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="__SingleUse_9D2Y" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="__SingleUse_HYAG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_GTDY" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_BX7J" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_GMXP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="__SingleUse_ESKK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="__SingleUse_6N9M" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_TADQ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_RSVV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_755D" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Oscillation Mode</Translation>
+      </Text>
+      <Text Id="__SingleUse_T2BW" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Select Mode</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
