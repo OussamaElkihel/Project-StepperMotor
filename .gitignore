@@ -1,3 +1,5 @@
 /STM32CubeIDE/
 /TouchGFX/build/
 /TouchGFX/simulator/
+./.gitignore
+./changelog.txt
